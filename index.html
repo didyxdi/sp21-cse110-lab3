@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="author" content="Yinxuan Du">
         <title>Lab2: Yinxuan's Bullet Journal</title>
-        <link rel="icon" href="favicon.png" type="image/jpg">
+        <link rel="icon" href="resources/favicon.png" type="image/jpg">
     </head>
     <body>
         <header>
             <h1>Lab2: Yinxuan's Bullet Journal</h1>
-            <audio controls="controls" src="happy_dream.mp3"></audio>
+            <audio controls="controls" src="resources/happy_dream.mp3"></audio>
         </header>
         <main>
             <h2>Apr 8</h2>
@@ -61,25 +61,23 @@
                 <div><p>This is the bullet entry for Apr 10 (today).</p></div>
             </section>
             <h3>Tasks:</h3>
-            <nav>
-                <ol>
-                    <li>Shop at Trader Joe's.</li>
-                    <details>
-                        <summary>Shopping list:</summary>
-                        <p>Wipes, Salad bar, Everything bagel, Sumo citrus</p>
-                    </details>
-                </ol>
-            </nav>
+            <ol>
+                <li>Shop at Trader Joe's.</li>
+            </ol>
+            <details>
+                <summary>Shopping list:</summary>
+                <p>Wipes, Salad bar, Everything bagel, Sumo citrus</p>
+            </details>
             <h3>Events:</h3>
             <nav>
                 <ul>
                     <li>CSE 101 quiz1 on <a href="https://canvas.ucsd.edu/">Canvas</a>.</li>
                     <li>Taming social media event.</li>
                     <li>Weekend!!!!!!</li>
-                    <video controls>
-                        <source src="video_for_fun.mp4">
-                    </video>
                 </ul>
+                <video controls>
+                    <source src="resources/video_for_fun.mp4">
+                </video>
             </nav>
             <br><hr><br>
             <h2>Create a new journal entry:</h2>
@@ -88,38 +86,34 @@
                     <label for="start">Today:</label>
                     <input type="date" id="today"><br><br>
 
-                    <form>
-                        <label for="date">Date: </label>
-                        <input type="radio" id="0408" name="date" value="0408">
-                        <label for="0408">Apr 8</label>
-                        <input type="radio" id="0409" name="date" value="0409">
-                        <label for="0409">Apr 9</label>
-                        <input type="radio" id="0410" name="date" value="0410">
-                        <label for="0410">Apr 10</label>
-                    </form><br><br>
+                    <label for="date">Date: </label>
+                    <input type="radio" id="0408" name="date" value="0408">
+                    <label for="0408">Apr 8</label>
+                    <input type="radio" id="0409" name="date" value="0409">
+                    <label for="0409">Apr 9</label>
+                    <input type="radio" id="0410" name="date" value="0410">
+                    <label for="0410">Apr 10</label>
+                    <br><br>
 
-                    <form>
-                        <label for="type">Type: </label>
-                        <input type="checkbox" id="tasks" name="type" value="tasks">
-                        <label for="0408">task</label>
-                        <input type="checkbox" id="events" name="type" value="events">
-                        <label for="0409">event</label>
-                    </form><br>
+                    <label for="type">Type: </label>
+                    <input type="checkbox" id="tasks" name="type" value="tasks">
+                    <label for="0408">task</label>
+                    <input type="checkbox" id="events" name="type" value="events">
+                    <label for="0409">event</label>
+                    <br><br>
 
                     <label for="summary">Summary: </label><input type="text" id="summary" name="summary">
                     <button>Enter</button><br><br>
 
-                    <form>
-                        <label for="diff">Difficulty:</label>
-                        <select name="diff" id="diff">
-                          <option value="d1">1</option>
-                          <option value="d2">2</option>
-                          <option value="d3">3</option>
-                          <option value="d4">4</option>
-                          <option value="d5">5</option>
-                        </select>
-                        <br><br>
-                    </form>
+                    <label for="diff">Difficulty:</label>
+                    <select name="diff" id="diff">
+                        <option value="d1">1</option>
+                        <option value="d2">2</option>
+                        <option value="d3">3</option>
+                        <option value="d4">4</option>
+                        <option value="d5">5</option>
+                    </select>
+                    <br><br>
 
                     <label for="detail">Detail: </label><br><textarea></textarea>
                     <button>Enter</button><br><br>
@@ -137,7 +131,7 @@
         </main>
         <footer>
             <span>Favicon for this website is cute cute pusheen cat ;)</span><br>
-            <img src="favicon.png">
+            <img src="resources/favicon.png">
             <p>Note: If you are using Google Chrome and the favicon doesn't show up, try Safari.</p>
         </footer>
 
