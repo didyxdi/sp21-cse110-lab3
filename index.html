@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Yinxuan Du">
@@ -83,10 +83,10 @@
             <h2>Create a new journal entry:</h2>
             <form>
                 <fieldset>
-                    <label for="start">Today:</label>
+                    <label>Today: </label>
                     <input type="date" id="today"><br><br>
 
-                    <label for="date">Date: </label>
+                    <label>Date: </label>
                     <input type="radio" id="0408" name="date" value="0408">
                     <label for="0408">Apr 8</label>
                     <input type="radio" id="0409" name="date" value="0409">
@@ -95,7 +95,7 @@
                     <label for="0410">Apr 10</label>
                     <br><br>
 
-                    <label for="type">Type: </label>
+                    <label>Type: </label>
                     <input type="checkbox" id="tasks" name="type" value="tasks">
                     <label for="0408">task</label>
                     <input type="checkbox" id="events" name="type" value="events">
@@ -105,7 +105,7 @@
                     <label for="summary">Summary: </label><input type="text" id="summary" name="summary">
                     <button>Enter</button><br><br>
 
-                    <label for="diff">Difficulty:</label>
+                    <label for="diff">Difficulty: </label>
                     <select name="diff" id="diff">
                         <option value="d1">1</option>
                         <option value="d2">2</option>
@@ -115,7 +115,7 @@
                     </select>
                     <br><br>
 
-                    <label for="detail">Detail: </label><br><textarea></textarea>
+                    <label>Detail: </label><br><textarea></textarea>
                     <button>Enter</button><br><br>
 
                     <label for="mood">Mood: </label>
@@ -131,7 +131,7 @@
         </main>
         <footer>
             <span>Favicon for this website is cute cute pusheen cat ;)</span><br>
-            <img src="resources/favicon.png">
+            <img src="resources/favicon.png" alt="pusheen">
             <p>Note: If you are using Google Chrome and the favicon doesn't show up, try Safari.</p>
         </footer>
 
