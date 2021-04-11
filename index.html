@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Yinxuan Du">
+        <title>Lab2: Yinxuan's Bullet Journal</title>
+        <link rel="icon" href="favicon.png" type="image/jpg">
+    </head>
+    <body>
+        <header>
+            <h1>Lab2: Yinxuan's Bullet Journal</h1>
+            <audio controls="controls" src="happy_dream.mp3"></audio>
+        </header>
+        <main>
+            <h2>Apr 8</h2>
+            <section>
+                <h3>Info:</h3>
+                <div><p>This is the bullet entry for Apr 8 (two days ago).</p></div>
+            </section>
+            <h3>Tasks:</h3>
+            <nav>
+                <ol>
+                    <li>Review CSE 101 week2 <a href="https://www.youtube.com/watch?v=nm2p8cwPGGs">lecture.</a> Keep notes.</li>
+                    <li>Apply AIP 197 <strong>(Very Important!!!)</strong> Find a supervisor as soon as possible.</li>
+                    <li>Read <b><i>Poor Economics</i></b>.</li>
+                </ol>
+            </nav>
+            <h3>Events:</h3>
+            <nav>
+                <ul>
+                    <li>CSE 101 Homework1 deadline. <strong>(Very Important!!!)</strong></li>
+                </ul>
+            </nav>
+            <br><hr><br>
+
+            <h2>Apr 9</h2>
+            <section>
+                <h3>Info:</h3>
+                <div><p>This is the bullet entry for Apr 9 (yesterday).</p></div>
+            </section>
+            <h3>Tasks:</h3>
+            <nav>
+                <ol>
+                    <li>Keep reviewing CSE 101 <a href="https://www.youtube.com/watch?v=nm2p8cwPGGs">lecture.</a></li>
+                    <li>Start looking for new apartment for the summer  <em>(Very Important as well!!)</em></li>
+                    <li>Phone calling to mom.</li>
+                </ol>
+            </nav>
+            <h3>Events:</h3>
+            <nav>
+                <ul>
+                    <li>CSE 21 office hour from 11AM to 1PM.</li>
+                    <li>WIC's Professor Coffee Chats.</li>
+                </ul>
+            </nav>
+            <br><hr><br>
+
+            <h2>Apr 10</h2>
+            <section>
+                <h3>Info:</h3>
+                <div><p>This is the bullet entry for Apr 10 (today).</p></div>
+            </section>
+            <h3>Tasks:</h3>
+            <nav>
+                <ol>
+                    <li>Shop at Trader Joe's.</li>
+                    <details>
+                        <summary>Shopping list:</summary>
+                        <p>Wipes, Salad bar, Everything bagel, Sumo citrus</p>
+                    </details>
+                </ol>
+            </nav>
+            <h3>Events:</h3>
+            <nav>
+                <ul>
+                    <li>CSE 101 quiz1 on <a href="https://canvas.ucsd.edu/">Canvas</a>.</li>
+                    <li>Taming social media event.</li>
+                    <li>Weekend!!!!!!</li>
+                    <video controls>
+                        <source src="video_for_fun.mp4">
+                    </video>
+                </ul>
+            </nav>
+            <br><hr><br>
+            <h2>Create a new journal entry:</h2>
+            <form>
+                <fieldset>
+                    <label for="start">Today:</label>
+                    <input type="date" id="today"><br><br>
+
+                    <form>
+                        <label for="date">Date: </label>
+                        <input type="radio" id="0408" name="date" value="0408">
+                        <label for="0408">Apr 8</label>
+                        <input type="radio" id="0409" name="date" value="0409">
+                        <label for="0409">Apr 9</label>
+                        <input type="radio" id="0410" name="date" value="0410">
+                        <label for="0410">Apr 10</label>
+                    </form><br><br>
+
+                    <form>
+                        <label for="type">Type: </label>
+                        <input type="checkbox" id="tasks" name="type" value="tasks">
+                        <label for="0408">task</label>
+                        <input type="checkbox" id="events" name="type" value="events">
+                        <label for="0409">event</label>
+                    </form><br>
+
+                    <label for="summary">Summary: </label><input type="text" id="summary" name="summary">
+                    <button>Enter</button><br><br>
+
+                    <form>
+                        <label for="diff">Difficulty:</label>
+                        <select name="diff" id="diff">
+                          <option value="d1">1</option>
+                          <option value="d2">2</option>
+                          <option value="d3">3</option>
+                          <option value="d4">4</option>
+                          <option value="d5">5</option>
+                        </select>
+                        <br><br>
+                    </form>
+
+                    <label for="detail">Detail: </label><br><textarea></textarea>
+                    <button>Enter</button><br><br>
+
+                    <label for="mood">Mood: </label>
+                    <input list="moods" name="mood" id="mood">
+                    <datalist id="moods">
+                        <option value="Cheerful">
+                        <option value="Idyllic">
+                        <option value="Depressed">
+                    </datalist>
+                </fieldset>
+            </form>
+            <br><hr><br>
+        </main>
+        <footer>
+            <span>Favicon for this website is cute cute pusheen cat ;)</span><br>
+            <img src="favicon.png">
+            <p>Note: If you are using Google Chrome and the favicon doesn't show up, try Safari.</p>
+        </footer>
+
+        
+    </body>
+</html>
