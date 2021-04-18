@@ -1,0 +1,57 @@
+html, body {  /* overall page */
+    background-color: #EAD3CB;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    max-height: fit-content;
+}
+
+header {
+    background-color: hsl(345, 22%, 42%);
+    height: 8em;
+    width: 100vw;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding: 2% 0% 2% 0%;
+}
+
+header h1 {
+    margin: 1.5% 0% 0% 23%;
+}
+
+.entry { /* for each journal entry */
+    display: block;
+    background-color: rgb(189,199,201);
+    height: 10cm;
+    width: 7in;
+    margin: 0% 25% 1% 15%;
+    padding-left: 2cm;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+    border-style: outset;
+    border-color: #2B4F60;
+    border-width: 5px;
+    border-radius: 50px;
+}
+
+.entry ol {
+    line-height: 20px;
+}
+
+.entry h2 { /* text style for titles of journal entry */
+    font-size: 1.9rem;
+    color: black;
+    text-align: right;
+    margin: 10px 50px 0px 0px;
+}
+
+strong {
+    display: inline-block;
+    text-decoration: underline hsl(345, 22%, 42%) 0.1cm;
+}
+
+.video {
+    margin: auto;
+}
