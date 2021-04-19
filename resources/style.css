@@ -1,0 +1,123 @@
+html {  /* overall page */
+    background-color: #EAD3CB;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    max-height: fit-content;
+    font-family: 'Cabin', sans-serif;
+}
+
+body { /* header, main, footer*/
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
+header {
+    background-color: hsl(345, 22%, 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 100vw;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding: 2% 0% 2% 0%;
+    position: fixed;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header audio {
+    margin-left: 80%;
+}
+
+main {
+    flex-grow: 1;
+    margin-top: 7em;
+}
+
+.entry { /* for each journal entry */
+    display: block;
+    background-color: rgb(189,199,201);
+    height: 10cm;
+    width: 7in;
+    margin: 0% 25% 1% 18%;
+    padding-left: 2cm;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+    border-radius: 50px;
+    position: relative;
+}
+
+.entry:hover {
+    border-style: outset;
+    border-color: #2B4F60;
+    border-width: 5px;
+    border-radius: 50px;
+}
+
+.entry:active {
+    border-style: inset;
+    border-color: #2B4F60;
+    border-width: 5px;
+    border-radius: 50px;
+}
+
+.entry ol {
+    line-height: 20px;
+}
+
+.entry h2 { /* text style for titles of journal entry */
+    font-size: 1.9rem;
+    color: black;
+    text-align: right;
+    margin: 10px 50px 0px 0px;
+}
+
+strong {
+    text-decoration: underline;
+    display: inline;
+}
+
+#flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+form {
+    width: 45%;
+}
+
+#grid-container img {
+    width: 90%;
+    border-radius: 50px;
+}
+
+#grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: hsl(345, 22%, 42%);
+    position: fixed;
+    margin-top: 18.8cm;
+    margin-left: -10px;
+    padding-left: 50px;
+    height: 3em;
+    width: 100vw;
+}
