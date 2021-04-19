@@ -89,6 +89,7 @@ h3 + nav {
 
 .entry ol {
     line-height: 20px;
+    margin: auto;
 }
 
 .entry h2 { /* text style for titles of journal entry */
