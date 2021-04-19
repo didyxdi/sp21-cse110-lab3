@@ -1,3 +1,7 @@
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
 html {  /* overall page */
     background-color: #EAD3CB;
     width: 100%;
@@ -6,7 +10,6 @@ html {  /* overall page */
     padding: 0px;
     overflow-x: hidden; 
     max-height: fit-content;
-    font-family: 'Cabin', sans-serif;
 }
 
 body { /* header, main, footer*/
@@ -20,30 +23,41 @@ body { /* header, main, footer*/
     }
 }
 
-header {
+header, footer {
     background-color: hsl(345, 22%, 42%);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5em;
-    width: 100vw;
-    margin-top: -10px;
     margin-left: -10px;
-    padding: 2% 0% 2% 0%;
     position: fixed;
+    width: 100vw;
 }
 
-header h1 {
+header {
+    height: 5em;
+    margin-top: -10px;
+    padding: 2% 0% 2% 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
     text-align: center;
 }
 
 header audio {
-    margin-left: 80%;
+    margin-left: 75%;
 }
 
 main {
     flex-grow: 1;
     margin-top: 7em;
+}
+
+h3 ~ div {
+    color:hsl(345, 22%, 42%);
+}
+
+h3 + nav {
+    color:#2B4F60
 }
 
 .entry { /* for each journal entry */
@@ -84,6 +98,12 @@ main {
     margin: 10px 50px 0px 0px;
 }
 
+a.in-list {
+    color:hsl(345, 22%, 35%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 strong {
     text-decoration: underline;
     display: inline;
@@ -113,11 +133,14 @@ form {
 }
 
 footer {
-    background-color: hsl(345, 22%, 42%);
     position: fixed;
     margin-top: 18.8cm;
-    margin-left: -10px;
     padding-left: 50px;
     height: 3em;
-    width: 100vw;
+}
+
+a[href="https://www.linkedin.com/in/didyxdi0816/"] {
+    text-decoration: none;
+    font-weight: bold;
+    color: #EAD3CB;
 }
